@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  background: #eee;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#contact-list {
+  padding: 48px;
+}
+
+.contact-card {
+  padding: 24px;
+  background: #fff;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  border-left: 4px solid #ddd;
+  border-right: 6px solid #ddd;
+  transition: transform 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translate(12px, 4px);
+  cursor: pointer;
+}
+
+.contact-card h4 {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.contact-card p {
+  margin: 0;
+  color: #aaa;
+}
