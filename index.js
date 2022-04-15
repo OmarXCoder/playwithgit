@@ -17,3 +17,19 @@ const renderContact = (contact) => {
 contacts.forEach((contact) => {
   renderContact(contact);
 });
+
+const formEl = document.getElementById("contact-form");
+
+formEl.addEventListener("submit", (e) => {
+  e.preventDefault();
+  const nameEl = document.getElementById("name");
+  const emailEl = document.getElementById("email");
+  const colorEl = document.getElementById("color");
+
+  renderContact({
+    id: new Date().getTime(),
+    name: nameEl.value,
+    email: emailEl.value,
+    color: colorEl.value,
+  });
+});
